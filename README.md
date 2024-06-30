@@ -905,7 +905,7 @@ CDT for urban pluvial flood modeling with citizen participation
 | Reference/DOI                  |                                                        | https://doi.org/10.3390/ijgi12020049                                                                                                                                                                                                                                                             |
 
 
-### Bohai area, China
+### Weihai, China
 
 CDT for flood simulation
 
@@ -916,7 +916,7 @@ CDT for flood simulation
 |                                | Paper title                                            | Three-dimensional urban flood inundation simulation based on digital aerial photogrammetry          | 
 |                                | Published/case operation year(s)                       | 2020                                                                                                | 
 |                                | CDT name                                               |                                                                                                     |
-|                                | Located city                                           |                                                                                                     | 
+|                                | Located city                                           | Huancui District, Weihai City, Shandong Province                                                    | 
 |                                | Located country                                        |                                                                                                     | 
 | Involved system(s) in the city | IoT technologies                                       |                                                                                                     | 
 |                                | Transportation                                         |                                                                                                     | 
