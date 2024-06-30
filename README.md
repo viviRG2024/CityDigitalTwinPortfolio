@@ -951,42 +951,42 @@ A CDT for flood inundation simulation
 ### Taipei, China
 
 
-| Parameter category             | Parameter                                              | Results                                                                                                  | 
-|:-------------------------------|:-------------------------------------------------------|:---------------------------------------------------------------------------------------------------------| 
-| CDT case information           | Data collection type                                   | Literature review - research pilot case                                                                  | 
-|                                | Paper title                                            | Developing WSN/BIM-Based Environmental Monitoring Management System for Parking Garages in Smart Cities  | 
-|                                | Published/case operation year(s)                       |                                                                                                          | 
-|                                | CDT name                                               |                                                                                                          |
-|                                | Located city                                           |                                                                                                          | 
-|                                | Located country                                        |                                                                                                          | 
-| Involved system(s) in the city | IoT technologies                                       |                                                                                                          | 
-|                                | Transportation                                         |                                                                                                          | 
-|                                | Workplace                                              |                                                                                                          | 
-|                                | Land and agriculture                                   |                                                                                                          | 
-|                                | City services                                          |                                                                                                          | 
-|                                | Household                                              |                                                                                                          |
-|                                | Whether or not consider human interactions in the city |                                                                                                          |
-| Stakeholder-related            | CDT owner organization (who initiate)                  |                                                                                                          | 
-|                                | Involved stakeholders                                  | Manager, stuff, customers                                                                                |
-|                                | Stakeholder requirements (SRs)                         |                                                                                                          | 
-|                                | CDT User interactive functions                         | CO gas detection, temperature, wireless module                                                           | 
-| Introduction of CDE            | General introduction or features                       |                                                                                                          |
-| Applied DRs                    | For data sources collection                            |                                                                                                          |
-|                                | For common data models (CDMs)                          |                                                                                                          |
-| Data sources                   | Geometric                                              | BIM (revit),                                                                                             |
-|                                | Geometric data collection method                       |                                                                                                          |
-|                                | Non-geometric                                          | IoT-based WSN, web-based systems (.NET microfraework, access)                                            |
-|                                | Non-geometric data collection method                   |                                                                                                          |
-| Data management pipeline       | Data collection and ingestion                          |                                                                                                          |
-|                                | Data pre-processing and integration                    | a decision workflow for WSN and BIM technologies                                                         |
-|                                | Data storage and security                              | Microsoft Access (software), build a database to store historical data and for information query         |
-|                                | Data analytics                                         |                                                                                                          |
-|                                | Data representation                                    | WSN data stream for data analysis and match to BIM model by GUID, 2D and 3D visual, realtime data        |
-|                                | Data pipeline                                          |                                                                                                          |
-|                                | Metadata management                                    |                                                                                                          |
-| Data consumers                 | Interactive ends                                       |                                                                                                          |
-|                                | Direct data consumer (e.g., developer)                 |                                                                                                          |
-| Reference/DOI                  |                                                        | https://doi.org/10.1061/(ASCE)ME.1943-5479.0000760.                                                      |
+| Parameter category             | Parameter                                              | Results                                                                                                 | 
+|:-------------------------------|:-------------------------------------------------------|:--------------------------------------------------------------------------------------------------------| 
+| CDT case information           | Data collection type                                   | Literature review - research pilot case                                                                 | 
+|                                | Paper title                                            | Developing WSN/BIM-Based Environmental Monitoring Management System for Parking Garages in Smart Cities | 
+|                                | Published/case operation year(s)                       | 2020                                                                                                    | 
+|                                | CDT name                                               |                                                                                                         |
+|                                | Located city                                           |                                                                                                         | 
+|                                | Located country                                        |                                                                                                         | 
+| Involved system(s) in the city | IoT technologies                                       |                                                                                                         | 
+|                                | Transportation                                         |                                                                                                         | 
+|                                | Workplace                                              |                                                                                                         | 
+|                                | Land and agriculture                                   |                                                                                                         | 
+|                                | City services                                          |                                                                                                         | 
+|                                | Household                                              |                                                                                                         |
+|                                | Whether or not consider human interactions in the city |                                                                                                         |
+| Stakeholder-related            | CDT owner organization (who initiate)                  |                                                                                                         | 
+|                                | Involved stakeholders                                  | Manager, stuff, customers                                                                               |
+|                                | Stakeholder requirements (SRs)                         |                                                                                                         | 
+|                                | CDT User interactive functions                         | CO gas detection, temperature, wireless module                                                          | 
+| Introduction of CDE            | General introduction or features                       |                                                                                                         |
+| Applied DRs                    | For data sources collection                            |                                                                                                         |
+|                                | For common data models (CDMs)                          |                                                                                                         |
+| Data sources                   | Geometric                                              | BIM (revit),                                                                                            |
+|                                | Geometric data collection method                       |                                                                                                         |
+|                                | Non-geometric                                          | IoT-based WSN, web-based systems (.NET microfraework, access)                                           |
+|                                | Non-geometric data collection method                   |                                                                                                         |
+| Data management pipeline       | Data collection and ingestion                          |                                                                                                         |
+|                                | Data pre-processing and integration                    | a decision workflow for WSN and BIM technologies                                                        |
+|                                | Data storage and security                              | Microsoft Access (software), build a database to store historical data and for information query        |
+|                                | Data analytics                                         |                                                                                                         |
+|                                | Data representation                                    | WSN data stream for data analysis and match to BIM model by GUID, 2D and 3D visual, realtime data       |
+|                                | Data pipeline                                          |                                                                                                         |
+|                                | Metadata management                                    |                                                                                                         |
+| Data consumers                 | Interactive ends                                       |                                                                                                         |
+|                                | Direct data consumer (e.g., developer)                 |                                                                                                         |
+| Reference/DOI                  |                                                        | https://doi.org/10.1061/(ASCE)ME.1943-5479.0000760.                                                     |
 
 
 
