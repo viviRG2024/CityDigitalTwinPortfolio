@@ -431,7 +431,6 @@ TwinPort: 5G drone‑assisted data collection with digital twin for smart seapor
 | Reference/DOI                  |                                                        | https://doi.org/10.1038/s41598-023-39366-1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
-### London, UK
 
 
 
