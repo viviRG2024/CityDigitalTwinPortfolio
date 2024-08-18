@@ -893,6 +893,49 @@ EnvVisio tool for the preparation, storage, linking and provision of relevant mo
 | Reference/DOI                  |                                                        | https://doi.org/10.5194/isprs-annals-VIII-4-W2-2021-29-2021                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
+### Vienna, Austria
+
+Digital geoTwin Vienna: Towards a Digital Twin City as Geodata Hub
+
+| Parameter category             | Parameter                                              | Results                                                            | 
+|:-------------------------------|:-------------------------------------------------------|:-------------------------------------------------------------------| 
+| CDT case information           | Data collection type                                   | Literature review - research pilot case                            | 
+|                                | Paper title                                            | Digital geoTwin Vienna: Towards a Digital Twin City as Geodata Hub | 
+|                                | Published/case operation year(s)                       | 2020                                                               | 
+|                                | CDT name                                               | Digital geoTwin Vienna                                             |
+|                                | Located city                                           | Vienna                                                             | 
+|                                | Located country                                        | Austria                                                            | 
+| Involved system(s) in the city | IoT technologies                                       |                                                                    | 
+|                                | Transportation                                         |                                                                    | 
+|                                | Workplace                                              |                                                                    | 
+|                                | Land and agriculture                                   |                                                                    | 
+|                                | City services                                          |                                                                    | 
+|                                | Household                                              |                                                                    |
+|                                | Whether or not consider human interactions in the city |                                                                    |
+| Stakeholder-related            | CDT owner organization (who initiate)                  |                                                                    | 
+|                                | Involved stakeholders                                  |                                                                    |
+|                                | Stakeholder requirements (SRs)                         |                                                                    | 
+|                                | CDT User interactive functions                         |                                                                    | 
+| Introduction of CDE            | General introduction or features                       |                                                                    |
+| Applied DRs                    | For data sources collection                            |                                                                    |
+|                                | For common data models (CDMs)                          |                                                                    |
+| Data sources                   | Geometric                                              |                                                                    |
+|                                | Geometric data collection method                       |                                                                    |
+|                                | Non-geometric                                          |                                                                    |
+|                                | Non-geometric data collection method                   |                                                                    |
+| Data management pipeline       | Data collection and ingestion                          |                                                                    |
+|                                | Data pre-processing and integration                    |                                                                    |
+|                                | Data storage and security                              |                                                                    |
+|                                | Data analytics                                         |                                                                    |
+|                                | Data representation                                    |                                                                    |
+|                                | Data pipeline                                          |                                                                    |
+|                                | Metadata management                                    |                                                                    |
+| Data consumers                 | Interactive ends                                       |                                                                    |
+|                                | Direct data consumer (e.g., developer)                 |                                                                    |
+| Reference/DOI                  |                                                        |                                                                    |
+
+
+
 
 ## North America
 
@@ -1113,8 +1156,8 @@ Blockchain-enabled CDT for urban asset management
 
 ### Los Angeles, USA
 
-BIM-based facility and asset managemetn in USC campus
-
+BIM-based facility and asset management in USC campus
+zzz
 
 | Parameter category             | Parameter                                              | Results                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 
 |:-------------------------------|:-------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
