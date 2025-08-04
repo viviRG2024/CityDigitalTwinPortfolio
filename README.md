@@ -1,5 +1,5 @@
 # CityDigitalTwinPortfolio
-This dataset introduces a portfolio of CDT cases collected from existing literature and industry experts.
+This dataset introduces a portfolio of CDT cases collected from existing literature and industry experts. Please review the Excel spreadsheet for the full Global CDT-SDG Case Library
 
 **Template**
 
