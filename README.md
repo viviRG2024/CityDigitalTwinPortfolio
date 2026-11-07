@@ -11,9 +11,12 @@ The study draws on two complementary sources of evidence:
 1. **published literature and other publicly accessible source material**, used to construct the literature-derived CDT case library; and
 2. **semi-structured expert interviews**, used to complement the literature-based evidence with practice-based information.
 
-The **literature-derived case library is publicly released through this repository**. Source evidence for individual literature-derived cases can be traced through the `Reference` field in the dataset.
+Both components are publicly released through this repository:
 
-The **case-level dataset derived from semi-structured expert interviews is not publicly released**. It was maintained as a separate sheet in the internal research workbook and is described below only to clarify the evidence base and methodology of the associated study.
+- the **literature-derived case library** (1,111 cases), whose source evidence can be traced through the `Reference` field; and
+- the **interview-derived case records** (30 cases), anonymised and documented at case level.
+
+Together, the library comprises **1,141 CDT cases**.
 
 The public case library is intended to function as a **living research resource** and may be expanded as new CDT implementations, publications, technical reports, project documentation, and other relevant evidence become available. The dataset version associated with the published study should, however, be treated as a fixed research snapshot for replication of the reported results.
 
@@ -25,7 +28,7 @@ The public case library is intended to function as a **living research resource*
 CityDigitalTwinPortfolio/
 ├── README.md
 ├── LICENSE
-├── Global_CDT-SDG_Case_Library.xlsx
+├── v3_Nov2026-Global_CDT-SDG_Case_Library.xlsx
 └── code/
     ├── CDT-fig2.py
     └── CDT-fig3.py
@@ -33,16 +36,15 @@ CityDigitalTwinPortfolio/
 
 ### Public data workbook
 
-The public workbook contains two literature-derived data sheets:
+The public workbook contains three data sheets:
 
 | Sheet | Description |
 |---|---|
 | `CDTs_from_literature` | The principal literature-derived CDT case dataset, containing **1,111 case records**. |
 | `Appendix-CDT_labelling` | Additional descriptive characterisation of the same literature-derived cases using CDT archetype, technical, and application-domain dimensions. |
+| `CDTs_from_expert_interview` | Case-level records derived from semi-structured expert interviews, containing **30 anonymised case records**. |
 
-The **1,111 records represent cases rather than unique publications or source documents**. A single source may support more than one case record where distinct implementations or locations can be identified.
-
-The internal research workbook used during the study also contained a third sheet, `CDTs_from_expert_interview`, comprising case-level records derived from semi-structured expert interviews. **This sheet is not included in the public data release.**
+The **1,111 literature-derived records represent cases rather than unique publications or source documents**. A single source may support more than one case record where distinct implementations or locations can be identified.
 
 ### Analysis notebooks
 
@@ -121,13 +123,36 @@ The interviews were used to:
 - capture technical, organisational, governance, and data-integration issues that are often incompletely documented in publications; and
 - provide additional information on stakeholder requirements and common data environments where available.
 
-Case-level information derived from these interviews was organised in a separate sheet, `CDTs_from_expert_interview`, within the **internal research workbook**.
+Case-level information derived from these interviews is provided in the sheet `CDTs_from_expert_interview` (30 cases; see [Sheet 3](#sheet-3-cdts_from_expert_interview)).
 
-**The interview-derived case-level dataset is not included in the public repository or public workbook release.**
+Interview information was anonymised or generalised where necessary to protect participants and commercially sensitive information. Cases are identified by letter codes rather than project or organisation names. Raw interview materials, such as recordings and transcripts, are not distributed.
 
-Interview information was anonymised or generalised where necessary to protect participants and commercially sensitive information. The associated manuscript and Supplementary Information describe the methodological role of the interview evidence, but the underlying interview material and case-level interview records are not publicly distributed.
+### 3. Host-location population
 
-### 3. Case review and standardisation
+Each case was assigned a population value for its host location (city, urban centre, or settlement) to describe the surrounding urban setting.
+
+Population was primarily obtained from the European Commission Joint Research Centre's **Global Human Settlement Layer (GHSL) Urban Centre Database 2025 (GHS-UCDB R2024A, version 1.2)** [[1]](#references), which provides globally harmonised statistics for 11,422 urban centres delineated using the Degree of Urbanisation methodology. The database was downloaded from the [GHSL website](https://human-settlement.emergency.copernicus.eu/ghs_ucdb_2024.php).
+
+- Of the **1,141 cases** assessed for population matching (1,111 literature-derived cases and 30 interview-derived cases), **806** (780 literature-derived and 26 interview-derived) could be matched to an urban centre in GHS-UCDB and were assigned its **2025 population estimate**.
+- For cases without a suitable GHSL match, supplementary population data were sourced from [City Population](https://www.citypopulation.de/), which compiles population statistics for cities, urban areas, and administrative divisions across countries. A small number of remaining cases used other official or publicly accessible statistical sources.
+- Where available, population figures for **2025** were prioritised; otherwise, figures from the closest available reference year were used.
+- Cases whose host location could not be meaningfully assigned a single population figure (for example, multi-city, regional, maritime, or cross-jurisdictional implementations) were left blank.
+
+Population sources are distributed across the two case sheets as follows:
+
+| Population source | Literature | Interview | Total |
+|---|---|---|---|
+| JRC GHSL Urban Centre Database 2025 (GHS-UCDB R2024A, v1.2) | 780 | 26 | 806 |
+| City Population (citypopulation.de) | 252 | 3 | 255 |
+| Other official or public sources | 3 | 1 | 4 |
+| No population assigned | 76 | 0 | 76 |
+| **Total** | **1,111** | **30** | **1,141** |
+
+Case-specific population sources are recorded in the `Population_source` field (`Population source` in the interview sheet): GHSL-matched cases are labelled with the database name, while other cases contain the URL of the specific source page used.
+
+Host-location population is used only as a **contextual descriptor of the surrounding urban setting**. It is not a measure of the spatial or functional scope of a CDT implementation, nor an estimate of the number of CDT users.
+
+### 4. Case review and standardisation
 
 Following data collection, cases were reviewed and standardised by a research team with expertise in digital twins, urban systems, asset management, and data-related research.
 
@@ -222,7 +247,9 @@ This is the principal case-level dataset and contains **1,111 literature-derived
 | `Area` | More specific study or implementation area where available, such as a district, campus, infrastructure corridor, facility, or other sub-city area. |
 | `Country/Region` | Country or territorial context associated with the case. |
 | `Full_address` | Standardised geographical description used to support geocoding. |
-| `Population` | Population associated with the host city or settlement where available. This is a contextual variable and is not an estimate of CDT users. |
+| `Population` | Population of the host city, urban centre, or settlement where available. This is a contextual variable and is not an estimate of CDT users or of the spatial scope of the implementation. See [Host-location population](#3-host-location-population). |
+| `Population_source` | Source of the `Population` value. Cases matched to the GHSL Urban Centre Database are labelled `JRC GHSL Urban Centre Database 2025 (GHS-UCDB R2024A, v1.2)`; other cases contain the URL of the specific source page used (mostly City Population). |
+| `Population_Reference_Year` | Reference year of the population value. GHSL-matched cases are recorded as `2025`; values from other sources record the year and type of figure reported by that source, e.g. `[2025] – Estimate` or `[2020] – Census`. |
 | `Latitude` | Latitude used for spatial analysis. |
 | `Longitude` | Longitude used for spatial analysis. |
 | `Region` | Broad geographical or structural grouping used in the global analysis. |
@@ -326,29 +353,28 @@ The absence of reported information should not automatically be interpreted as e
 
 ---
 
-## Restricted interview-derived data
+## Sheet 3: `CDTs_from_expert_interview`
 
-### Internal Sheet 3: `CDTs_from_expert_interview`
+This sheet contains **30 case records** derived from the semi-structured expert interviews. It follows the coding framework of `CDTs_from_literature`, with some fields named differently and two additional interview-specific fields. Cases were anonymised or generalised where necessary, and no source reference is given for individual cases.
 
-The internal research workbook used in the associated study contained a third sheet, `CDTs_from_expert_interview`, documenting case-level information derived from the semi-structured expert interviews.
+### Fields that differ from `CDTs_from_literature`
 
-The sheet included information corresponding broadly to the literature-based coding framework, including:
+| Field | Description |
+|---|---|
+| `Case code` | Anonymised case identifier (`A`, `B`, …, `AD`). |
+| `Case name` | Generalised description of the case (e.g., *A university campus CDT*), used in place of a source title. |
+| `Published Year` | Broad temporal descriptor of the implementation; equivalent to `Published_Year`. |
+| `Population source` | Equivalent to `Population_source`. |
+| `Located country` | Equivalent to `Country/Region`. |
+| `SDG_score` | Country-level 2025 SDG Index score; equivalent to `2025 SDG Index Score`. |
+| `SDG_layer` | Grouping derived from `SDG_score`; equivalent to `2025 SDG layer`. |
+| `ISO_37120` | Equivalent to `ISO_37120 Standardised City Services`. |
+| `Stakeholder requirements (if available)` | Stakeholder requirements for the CDT as described by interviewees, where discussed. |
+| `Introduction of the common data environment (CDE) (if available)` | Description of the common data environment developed or used for the CDT, where discussed. |
 
-- case and location descriptors;
-- urban-system representation;
-- city-service and SDG coding;
-- stakeholder involvement;
-- geometric and non-geometric data sources; and
-- contextual information derived from practitioner accounts.
+All other fields — `City`, `Area`, `Population`, `Population_Reference_Year`, `Latitude`, `Longitude`, the six urban-system dimensions, `City services`, `Covered_SDGs`, `Involved_stakeholders`, `Geometric`, `Non-geometric`, and `Cluster` — have the same meaning as in `CDTs_from_literature`. The six urban-system dimensions again appear twice: first as descriptive text and then as binary `0/1` coding.
 
-It also contained interview-specific information relating to topics such as:
-
-- stakeholder requirements; and
-- the development or use of common data environments (CDEs), where discussed.
-
-**This sheet is not part of the public data release.**
-
-The underlying interview-derived case records and interview material are not distributed through this repository. Descriptions of the interview component are provided to document the methodological basis of the study and should not be interpreted as indicating public access to the underlying records.
+The sheet does not contain `Full_address`, `Region`, `2025 SDG Index Rank`, or `Reference`.
 
 ---
 
@@ -389,22 +415,15 @@ It does **not** demonstrate:
 
 The public release contains:
 
-- `CDTs_from_literature`; and
-- `Appendix-CDT_labelling`.
-
-These sheets contain the literature-derived case library and its associated descriptive classifications.
+- `CDTs_from_literature` – 1,111 literature-derived cases;
+- `Appendix-CDT_labelling` – descriptive classifications of the literature-derived cases; and
+- `CDTs_from_expert_interview` – 30 anonymised interview-derived cases.
 
 The source evidence underlying individual literature-derived cases can be traced through the `Reference` field.
 
-### Restricted data
+### Not distributed
 
-The case-level dataset derived from semi-structured expert interviews, maintained internally as `CDTs_from_expert_interview`, is **not publicly released**.
-
-The underlying interview materials are also not distributed through this repository.
-
-Accordingly, the public repository enables inspection, reuse, and reanalysis of the **literature-derived CDT case library**, while interview-derived evidence used in the associated study cannot be independently reconstructed at the case level from the public repository alone.
-
-Users should refer to the associated manuscript and Supplementary Information for the methodological description and reported analysis of the interview component.
+Raw interview materials, such as recordings, transcripts, and information that could identify participants or their organisations, are not distributed through this repository. Users should refer to the associated manuscript and Supplementary Information for the interview methodology.
 
 ---
 
@@ -466,8 +485,10 @@ When reproducing or extending the analysis:
 - treat `N/A` as unavailable, unreported, non-applicable, or insufficiently documented information rather than automatically as absence;
 - remember that `Published_Year` is a broad temporal field and may represent a publication year, project year, implementation period, or operational period;
 - treat country-level SDG metrics as contextual variables rather than city-level outcomes;
-- treat `Population` as a host-city or settlement context variable rather than the number of CDT users;
+- treat `Population` as a host-city or settlement context variable rather than the number of CDT users or the spatial scope of the CDT;
+- note that `Population` combines GHSL urban-centre estimates (2025) with figures from other sources that may refer to administrative units and other reference years; check `Population_source` and `Population_Reference_Year` before comparing values across cases;
 - distinguish descriptive urban-system columns from the later binary columns with the same field names;
+- when combining the literature and interview sheets, align the differently named fields listed under [Sheet 3](#sheet-3-cdts_from_expert_interview);
 - treat the labels in `Appendix-CDT_labelling` as analytical characterisations rather than validated maturity scores; and
 - consult the `Reference` field and underlying source evidence before making detailed claims about an individual CDT implementation.
 
@@ -504,7 +525,7 @@ When proposing a new literature- or publicly documented case, please provide, wh
 
 Community-submitted records should be treated as **candidate cases** until they have been reviewed against the same inclusion, standardisation, and coding principles applied to the existing case library.
 
-Community contribution mechanisms apply to information that can be supported through publicly shareable evidence. They do not provide a mechanism for releasing or reconstructing restricted interview-derived records.
+Community contribution mechanisms apply to information that can be supported through publicly shareable evidence.
 
 ---
 
@@ -588,9 +609,17 @@ A formal citation for the associated article will be added here following public
 
 This repository is released under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
+Population values derived from the GHSL Urban Centre Database remain subject to the terms of use of the European Commission Joint Research Centre; please cite the database [[1]](#references) when reusing them.
+
 The repository license does not replace or override copyright, licensing, or other rights associated with the original publications, project documentation, websites, or third-party data sources referenced by individual CDT cases.
 
-The restricted interview-derived dataset and underlying interview materials are **not distributed as part of this repository**.
+Raw interview materials are **not distributed as part of this repository**.
+
+---
+
+## References
+
+[1] Marí Rivero, I., Melchiorri, M., Florio, P., Schiavina, M., Krasnodębska, K., Politis, P., Uhl, J. H., Pesaresi, M., Maffenini, L., Sulis, P., Crippa, M., Guizzardi, D., Pisoni, E., Belis, C., Oom, D., Branco, A., Mwaniki, D., Kochulem, E., Githira, D., Carioli, A., Ehrlich, D., Tommasi, P., Kemper, T., & Dijkstra, L. (2024). *GHS-UCDB R2024A – GHS Urban Centre Database 2025* [Data set]. European Commission, Joint Research Centre (JRC). https://doi.org/10.2905/1a338be6-7eaf-480c-9664-3a8ade88cbcd
 
 ---
 
